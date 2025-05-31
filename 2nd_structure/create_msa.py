@@ -57,6 +57,7 @@ class MsaBatcher:
                     for i in range(0, len(seq), 60):
                         tf.write(seq[i:i+60] + "\n")
 
+
                 # run Clustal Omega
                 cmd = [
                     self.clustalo_exe,
